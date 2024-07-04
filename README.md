@@ -91,6 +91,7 @@ if (response.statusCode == 200) {
 - You can view a live demo of the app on Appetize.io ([here](https://appetize.io/app/b_dx7acejrjwag3bnw5qwirb4qwa))
 
 ## Project Structure
+````
 
     lib/
     |- main.dart
@@ -120,10 +121,11 @@ if (response.statusCode == 200) {
     |- utils/
     |- home.dart
     |- main.dart
+````
 
 ## Code Overview
 
 ### Main file
 
 - Main File (lib/main.dart): Contains the main entry point of the app, sets up navigation, and manages the state of the checkout list.
-````
+
