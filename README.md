@@ -73,7 +73,6 @@ if (response.statusCode == 200) {
    cd simple_shopping_app
    ```
 
-````
 
 2. **Get Flutter Packages**
 
