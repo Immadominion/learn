@@ -129,3 +129,8 @@ if (response.statusCode == 200) {
 
 - Main File (lib/main.dart): Contains the main entry point of the app, sets up navigation, and manages the state of the checkout list.
 
+
+### App [Backend](https://github.com/ubadineke/grid-bounty)
+
+- The link aboce contains link to app backend that consumes the grid API directly. 
+
