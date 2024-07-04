@@ -92,7 +92,7 @@ Learn is a quiz app designed to educate users about the Solana ecosystem. Users 
 
 ## Appetize Demo
 
-- You can view a live demo of the app on Appetize.io ([here](https://appetize.io/app/6fjrlfbjvtm2gv5nqkmundefwy?device=pixel7&osVersion=13.0))
+- You can view a live demo of the app on Appetize.io ([here](https://appetize.io/app/b_dx7acejrjwag3bnw5qwirb4qwa))
 
 ## Project Structure
 
