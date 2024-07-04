@@ -20,20 +20,14 @@ Learn is a quiz app designed to educate users about the Solana ecosystem. Users 
 
 #### Example Query
 
-````dart
+```dart
 final response = await http.get(Uri.parse('https://thegrid.id/api/projects'));
 if (response.statusCode == 200) {
   // Parse response and generate questions
 } else {
   // Handle error
 }
-
-
-
-
-# Simple Shopping App
-
-Learn is a quiz app designed to educate users about the Solana ecosystem. Users can choose quiz topics, which the app queries using The Grid API, and questions are generated using the Gemini API.
+```
 
 ## Features
 
@@ -57,9 +51,11 @@ Learn is a quiz app designed to educate users about the Solana ecosystem. Users 
 ![Quiz Completed](ss/img3.png)
 
 ### Select Quiz niche
+
 ![Select Quiz](ss/img4.png)
 
 ### Profile Screem
+
 ![Profile User](ss/img5.png)
 
 ## Setup Instructions
@@ -75,6 +71,7 @@ Learn is a quiz app designed to educate users about the Solana ecosystem. Users 
    ```sh
    git clone https://github.com/immadominion/simple_shopping_app.git
    cd simple_shopping_app
+   ```
 
 ````
 
@@ -130,3 +127,4 @@ Learn is a quiz app designed to educate users about the Solana ecosystem. Users 
 ### Main file
 
 - Main File (lib/main.dart): Contains the main entry point of the app, sets up navigation, and manages the state of the checkout list.
+````
