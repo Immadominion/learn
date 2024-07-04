@@ -29,8 +29,9 @@ class _AllQuizState extends ConsumerState<AllQuiz> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 15.h),
+          padding: EdgeInsets.only(left: 15.w, top: 15.h),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SectionWidget(
                 item: generalCategories,
@@ -57,13 +58,13 @@ class _AllQuizState extends ConsumerState<AllQuiz> {
 }
 
 // Function to create List<Widget> from allParameters
-List<Widget> buildQuizSummaryCards(List<String> titles) {
+List<Widget> buildQuizSummaryCards(List<String> titles, BuildContext context) {
   List<Widget> cards = [];
   for (var title in titles) {
     cards.add(
       QuizSummaryCard(
         title: title,
-        width: 140.w, // Adjust width as needed
+        width: MediaQuery.of(context).size.width / 2.3.w,
       ),
     );
   }
@@ -81,25 +82,30 @@ class SectionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          sectionName,
-          style: TextStyle(
-              fontFamily: "Mont", fontSize: 17.sp, fontWeight: FontWeight.bold),
-        ),
-        SizedBox(
-          height: 10.h,
-        ),
-        Wrap(
-          runSpacing: 10.h,
-          children: buildQuizSummaryCards(item),
-        ),
-        SizedBox(
-          height: 25.h,
-        ),
-      ],
+    return SizedBox(
+      width: double.maxFinite,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            sectionName,
+            style: TextStyle(
+                fontFamily: "Mont",
+                fontSize: 17.sp,
+                fontWeight: FontWeight.bold),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Wrap(
+            runSpacing: 10.h,
+            children: buildQuizSummaryCards(item, context),
+          ),
+          SizedBox(
+            height: 25.h,
+          ),
+        ],
+      ),
     );
   }
 }
